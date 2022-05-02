@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Outfit', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(216, 12%, 8%)
+}
+
+.card {
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  background: hsl(213, 19%, 18%);
+  padding: 2rem 2rem;
+  border-radius: .8rem;
+}
+
+
+.hide-card {
+  display: none;
+}
+
+.show-card {
+  display: flex;
+}
+
+.start-icon,
+.rate-me {
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px black;
+  color: hsl(216, 12%, 54%);
+  height: 3em;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.start-icon img {
+  width: 60%;
+  height: 70%;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.card-body {
+  width: 70%;
+  font-size: 1.4rem;
+  margin-bottom: 1.8rem;
+  color: hsl(216, 12%, 54%);
+}
+
+.rating-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rate-me {
+  height: 1.5rem;
+  font-size: 1.5rem;
+  padding: 1.2rem;
+  cursor: pointer;
+  transition: all .8ms ease-out;
+}
+
+/* .active {
+  background-color: hsl(217, 12%, 63%);
+} */
+
+
+.rate-me:hover {
+  background-color: hsl(217, 12%, 63%);
+}
+
+.currentSelected {
+  background: hsl(25, 97%, 53%);
+}
+
+.btn {
+  display: inline-block;
+  background: hsl(25, 97%, 53%);
+  padding: .6rem 1rem;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+
+.back-card {
+  justify-content: center;
+  align-items: center;
+}
+
+.back-card-icon {
+  margin-bottom: 1rem;
+}
+
+.back-card-body {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.dynamic-data {
+  border-radius: 1.6rem;
+  color: hsl(25, 97%, 53%);
+  box-shadow: 2px 2px 5px black;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+  padding: .6rem 1rem;
+}
